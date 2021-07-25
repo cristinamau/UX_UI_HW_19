@@ -1,0 +1,277 @@
+@import url(https://fonts.googleapis.com/css?family=Open+Sans);
+
+body{
+    margin: 0px;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.main {
+    display: flex;
+    flex-direction: column;
+    margin: 0px;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.header {
+    flex-direction: row;
+    height: 200px;
+}
+
+.menu {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    overflow: hidden;
+    background-color: #074A7B;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+}
+
+li {
+    float: left;
+    width: 100%;
+}
+  
+li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 16px;
+    text-decoration: none;
+}
+  
+li a:hover {
+    background-color: #C23B3B;
+}
+
+.get-involved {
+    width: 100%;
+}
+
+.flexContainer {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.support {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin-top: 50px;
+}
+
+.support-badge {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.badge {
+    height: 150px;
+    width: 150px;
+}
+
+.support-button {
+    background-color: #074A7B;
+    border-radius: 10px;
+    color: white;
+    height: 30px;
+    width: 100px;
+    margin-top: 25px;
+}
+
+.mission-statement {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-top: 75px;
+    margin-left: 50px;
+    margin-right: 50px;
+}
+
+.mission-statement-img {
+    height: 350px;
+    width: 100%;
+}
+
+.mission-statement-text {
+    height: 350px;
+    width: 100%;
+    background: rgb(0,0,0);
+    background: linear-gradient(0deg, rgba(0,0,0,1) 0%, rgba(85,85,85,1) 40%, rgba(0,0,0,1) 100%);
+    color: white;
+}
+
+.underline {
+    text-decoration: underline;
+}
+
+.section-title {
+    height: 50px;
+    width: 100%;
+}
+
+.our-work {
+    display: flex;
+    flex-direction: column;
+}
+
+.our-work-content {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: 25px;
+}
+
+.our-work-content-badge {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-left: auto;
+    margin-right: auto;
+    width: 300px;
+}
+
+.our-work-badge-title {
+    font-weight: bold;
+    text-decoration: underline;
+    margin-bottom: 10px;
+}
+
+.learn-more {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    background-color:#C23B3B;
+    border-radius: 10px;
+    color: white;
+    height: 30px;
+    width: 100px;
+}
+
+.latest-news {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-top: 25px;
+}
+
+.news-img {
+    width: 300px;
+    height: 350px;
+}
+
+.news-content {
+    display: flex;
+    flex-direction: row;
+    margin-left: 100px;
+    margin-right: 100px;
+    margin-top: 50px;
+}
+
+.news-text {
+    background: rgb(0,0,0);
+    background: linear-gradient(0deg, rgba(0,0,0,1) 0%, rgba(85,85,85,1) 40%, rgba(0,0,0,1) 100%);
+    color: white;
+}
+
+.footer {
+    background-color: #074A7B;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    height: 200px;
+    width: 100%;
+    color: white;
+    margin-left: 0px;
+    margin-right: 0px;
+    margin-top: 25px;
+}
+
+.left-footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+    margin-left: 75px;
+}
+
+.right-footer {
+    display: flex;
+    flex-direction: row;
+    margin-right: 75px;
+    margin-top: auto;
+    margin-bottom: auto;
+}
+
+.social-media-icons {
+    height: 50px;
+    width: 50px;
+    margin-left: 5px;
+}
+
+.workGrid {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    column-gap: 50px;
+}
+
+@media only screen and (max-width: 600px) {
+    .flexContainer {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .wrapper {
+        width: 100%;
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr;
+        row-gap: 10px;
+    }
+
+    .menu {
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+    }
+
+    .main {
+        display: flex;
+        flex-direction: column;
+        margin: 0px;
+        font-family: 'Open Sans', sans-serif;
+        width: 399.9%;
+    }
+
+    .footer {
+        background-color: #074A7B;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        width: 399.9%;
+        color: white;
+        margin-left: 0px;
+        margin-right: 0px;
+        margin-top: 25px;
+    }
+
+    .workGrid {
+        display: grid;
+        grid-template-rows: repeat(1, 1fr);
+        column-gap: 50px;
+    }
+
+
+
+
+}
