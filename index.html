@@ -15,12 +15,44 @@
         </div>
         <div class="menu">
             <ul>
-                <li><a href="#home">Home</a></li>
-                <li><a href="#about">About</a></li>
-                <li><a href="#ourwork">Our Work</a></li>
-                <li><a href="#news">News</a></li>
-                <li><a href="#support">Support</a></li>
-                <li><a href="#jobs">Jobs</a></li>
+                <li id='toggle'><a href="#home">Home</a>
+                </li>
+                <li id='toggleAbout'><a href="#about">About</a>
+                    <ul id='dropDownAbout'>
+                        <li>Board of Directors</li>
+                        <li>Our Team</li>
+                        <li>Financials</li>
+                    </ul>
+                </li>
+                <li id='toggleWork'><a href="#ourwork">Our Work</a>
+                    <ul id='dropDownWork'>
+                        <li>Juvenile Sentencing</li>
+                        <li>Reimagine Justice</li>
+                        <li>Survivors' Project</li>
+                        <li>Transformative Justice</li>
+                        <li>Reports</li>
+                    </ul>
+                </li>
+                <li id='toggleNews'><a href="#news">News</a>
+                    <ul id='dropDownNews'>
+                       <li>COVID-19</li>
+                       <li>In the Community</li>
+                       <li>Awards</li>
+                    </ul>
+                </li>
+                <li id='toggleSupport'><a href="#support">Support</a>
+                    <ul id='dropDownSupport'>
+                        <li>AmazonSmile</li>
+                        <li>Donate</li>
+                        <li>Volunteer</li>
+                    </ul>
+                </li>
+                <li id='toggleJobs'><a href="#jobs">Jobs</a>
+                    <ul id='dropDownJobs'>
+                        <li>Internships</li>
+                        <li>Careers</li>
+                    </ul>
+                </li>
                 <li><a href="#contact">Contact</a></li>
             </ul>
         </div>
@@ -182,7 +214,15 @@
         </div>
     </div>
     </div>
+    
 
 </body>
+
+<script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+<script src="js/index.js"></script>
+
+
+
+
 
 </html>

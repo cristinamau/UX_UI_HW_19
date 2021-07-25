@@ -34,6 +34,11 @@ ul {
     flex-direction: row;
 }
 
+ul ul {
+    display: flex;
+    flex-direction: column;
+}
+
 li {
     float: left;
     width: 100%;
